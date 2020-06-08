@@ -1,0 +1,392 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin */
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v11/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+.relative{
+    position: relative;
+}
+h1, h2{
+font-family: "abril fatface";
+}
+p, h3, li{
+font-family: "lato";
+}
+header{
+    background-image: url("images/pink-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 150px;
+    color: white;
+    display: flex;
+}
+#navLink{
+    font-family: "Abril Fatface";
+    font-size: 20px;
+    color: rgba(190, 130, 129, 0.5);
+    text-decoration: none;
+  }
+    #navLink:hover{
+        color:white;
+    }
+.header-text h1{
+    font-size: 80px;
+}
+.header-text h3{
+    font-size: 45px;
+}
+.header-text p{
+    font-size: 20px;
+}
+.header-text{
+     position: absolute;
+     top: 30%;
+     left: 33%;
+     text-shadow: 3px 1px 8px rgba(0, 0, 0, 0.5);
+}
+#skills .flowers{
+    position: absolute;
+    right: 0;
+    top: -20%;
+}
+#skills .row{
+    width: 75%;
+}
+.title{
+    font-size: 60px;
+}
+#skills .title{
+    margin-top: -60px;
+}
+#goals{
+    background-color: rgba(255, 235, 238, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+#experience{
+    background-image: url("images/red-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    color: white;
+}
+#experience .flowers{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#experience .row{
+    width: 75%;
+}
+#prevWork .title{
+    margin-top: -100px;
+    margin-left: 150px;
+}
+.projDetailsBox{
+    background-color: rgba(255, 235, 238, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    height: 300px;
+}
+.weather-mobDeets, .films-mobDeets, .oscars-mobDeets, .rgb-mobDeets, .weirdo-mobDeets, .nessies-mobDeets{
+    display: none;
+}
+#prevWork .row img{
+    width: 100%;
+}
+#prevWork .row img:hover{
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+.prevWorkFlower{
+    width: 25%;
+    position: absolute;
+    bottom: -58%;
+    right: 20%;
+    z-index: 1;
+}
+.content a{
+    color: black;
+}
+.content p{
+    font-size: 14px;
+}
+#about{
+    background-image: url("images/peach-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.664);
+
+}
+.me{
+    border-radius: 1% 33%;
+}
+#about .title{
+    padding-top: 2%;
+    padding-left: 5%;
+}
+#about .row{
+    margin-top: 3%;
+}
+#about .meDesc{
+    width: 95%;
+    margin-left: 0;
+}
+#about ul, #about li{
+    line-height: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+#about .list{
+    padding-left: 20%;
+    padding-top:3%;
+}
+.timeline{
+    width: 80%;
+}
+
+@media screen and (max-width: 320px){
+    header{
+        padding-bottom: 70px;
+    }
+    #navLink{
+        font-size: 12px;
+    }
+    header img{
+        width: 40%;
+    } 
+    .header-text{
+        top: 28%;
+        left: 25%;
+    }
+    .header-text h1{
+        font-size: 28px;
+    }  
+    .header-text h3{
+        font-size: 18px; 
+    }
+    .header-text p{
+        font-size: 12px;
+    }
+    #skills .title{
+        margin-top: 0px;
+    }
+    #skills .row{
+        width: 100%;
+    }
+   .title{
+        font-size: 26px;
+    }
+    #skills li{
+        font-size: 14px;
+    }
+    #experience{
+        margin-top: -50px;
+    }
+    #experience .title{
+        padding-top: 40px;
+    }
+    #experience .row{
+        width: 100%;
+        padding: 0;
+    }
+    #experience h3{
+        font-size: 18px;
+    }
+    #experience p, #experience li{
+        font-size: 12px;
+    }
+    #prevWork .title{
+        margin-left: 0;
+    }
+    .weather-mobDeets, .films-mobDeets, .oscars-mobDeets, .rgb-mobDeets, .weirdo-mobDeets, .nessies-mobDeets{
+        font-size: 12px;
+    }
+    .mobAboutFlowers{
+        width: 40%;
+        position: absolute;
+        top: 3%;
+        left: 30%;
+    }
+    #about{
+        font-size: 12px;
+        padding-top: 70%;
+        margin-top: -40%;
+    }
+    #about .title{
+        padding-top: 10%;
+    }
+   .me{
+        width: 25%;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 767px){
+    header{
+        padding-bottom: 70px;
+    }
+    #navLink{
+        font-size: 12px;
+    }
+    header img{
+        width: 40%;
+    } 
+    .header-text{
+        top: 28%;
+        left: 25%;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }  
+    .header-text h3{
+        font-size: 20px; 
+    }
+    .header-text p{
+        font-size: 14px;
+    }
+    #skills .title{
+        margin-top: 0px;
+    }
+    #skills .row{
+        width: 100%;
+    }
+    .title{
+        font-size: 26px;
+    }
+    #skills li{
+        font-size: 14px;
+    }
+    #goals h2{
+        font-size: 26px;
+    }
+    #experience{
+        margin-top: -50px;
+    }
+    #experience .title{
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    #experience .row{
+        width: 100%;
+        padding: 0;
+    }
+    #experience h3{
+        font-size: 18px;
+    }
+    #experience .jobDate{
+        font-size: 12px;
+    }
+    #experience p, #experience li{
+        font-size: 14px;
+    }
+    #prevWork .title{
+        margin-left: 0;
+    }
+    .mobAboutFlowers{
+        width: 40%;
+        position: absolute;
+        top: 3%;
+        left: 30%;
+    }
+    #about{
+        font-size: 12px;
+        padding-top: 70%;
+        margin-top: -40%;
+    }
+    #about .title{
+        padding-top: 10%;
+    }
+   .me{
+        width: 25%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    header img{
+        width: 50%;
+    } 
+    .header-text{
+        top: 28%;
+        left: 25%;
+    }
+    .header-text h1{
+        font-size: 60px;
+    }  
+    .header-text h3{
+        font-size: 40px; 
+    }
+    .header-text p{
+        font-size: 16px;
+    }
+    #skills .flowers{
+        position: absolute;
+        right: 0;
+        top: -20%;
+    }
+    #goals{
+        width: 70%;
+    }
+    #experience{
+        margin-top: -50px;
+    }
+    #experience .title{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    #experience img{
+        width: 45%;
+        margin-top: 160px;
+    }
+    #experience .row{
+        width: 65%;
+        padding: 0;
+        margin-left: auto;
+    }
+    #experience h3{
+        font-size: 20px;
+    }
+    #experience .jobDate{
+        font-size: 14px;
+    }
+    #experience p, #experience li{
+        font-size: 16px;
+    }
+    #prevWork .title{
+        margin-left: 0;
+    }
+    .projDetailsBox{
+        height: 360px;
+    }
+    .prevWorkFlower{
+        width: 40%;
+        position: absolute;
+        bottom: -48%;
+        left: 30%;
+        z-index: 1;
+    }
+    #about{
+        padding-top: 240px;
+    }
+    .timeline{
+        width: 100%;
+        margin-top: -40%;
+        padding-left: 10%;
+    }
+}
